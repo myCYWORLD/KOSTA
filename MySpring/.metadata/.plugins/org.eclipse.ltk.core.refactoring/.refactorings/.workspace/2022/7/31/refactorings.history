@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;fronboard&apos;" deleteContents="true" description="Delete resource &apos;fronboard&apos;" element1="/fronboard" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1658987921892"/>
-</session>
