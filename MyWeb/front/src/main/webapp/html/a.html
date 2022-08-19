@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>a.html</title>
+<style>
+p.c1{
+  border: 1px solid;
+  height: 200px;
+  /* vertical-align: center; -> block 요소의 내용이 중앙정렬 되는 것은 x =>line-height값을 height값과 같게 */
+}
+
+p.c2{
+  border: 1px solid;
+  height: 200px;
+  line-height: 200px;
+}
+
+p.c3{
+  white-space: nowrap;
+  width: 200px;
+  border: 1px solid;
+  overflow: hidden;  /*영역 스크롤 없앰*/
+  text-overflow: auto; /* 길이가 길어지면 뒤에 내용 생략 ...으로 나옴  */
+}
+p.b{
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+a:link, a:visited {
+  background-color: gray;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<h2>Link Button</h2>
+
+<p>A link styled as a button:</p>
+<a href="default.asp" target="_blank">This is a link</a>
+
+
+
+</style>
+</head>
+<body>
+<!--   font-size:100%;    default font size 그대로 (16px)   -->
+  font-size:200%     <!-- default값의 2배  -->
+</body>
+<p class="c1">
+TEST1
+</p>
+<p class="c2">
+TEST2
+</p>
+<p class="c3">
+나나나나ㅏ아아아아아아앙아좌아아아앙아아아아아아아아아아ㅇㄺ 끝내쥬세여어어ㅓㅓㅏㅓ러아렁라ㅓ아러ㅏㅓㅏㅇ러미ㅓ라배더라ㅓㅏㅣ퍼메ㅐ랍재ㅔㄷ흐파ㅜㅏㅓ래[ㅂㄷ러ㅏㅓㄻㅇ니ㅏ베ㅣㅏㅍ]
+</p>
+</html>

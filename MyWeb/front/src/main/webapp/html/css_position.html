@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css_position</title>
+</head>
+<style>
+
+	#con {
+		background-color:lightgray;
+		width:350px;
+		height:500px;
+		float:right;
+		/* position:absolute; */
+	}
+	.r {
+		background-color:red;
+		width:100px;
+		height:100px;
+		left:100px;
+		position:relative;
+	}
+	.g {
+		background-color:green;
+		width:100px;
+		height:100px;
+		position:relative;
+		left:100px;
+	}
+	
+	.b {
+		background-color:blue;
+		width:100px;
+		height:100px;
+		top:100px;
+		position:absolute;
+		/* clear:left; */
+	}
+</style>
+<body>
+	<div id="con">
+		<div class="r">RED</div>
+		<div class="g">GREEN</div>
+		<div class="b">BLUE</div>
+	</div>
+</body>
+</html>

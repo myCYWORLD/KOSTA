@@ -1,0 +1,33 @@
+#id_label {
+	padding-bottom:20px;
+	margin-right:60px;
+}
+
+#id_label>label {
+	margin-right:40px;
+}
+ #pwd_label {
+	 margin-left: 0;
+ }
+.buttons {
+	background-color:#3fa63f;
+	border:none;
+	color:white;
+	padding:15px;
+	margin:5px;
+	width:80px;
+	border-radius:7%;
+    text-align:center;
+    display: inline-block;
+    font-size: 13px;
+    display:inline-block;
+    cursor: pointer;
+    }
+    .d1{
+        background-color:lightgray;
+        padding:40px;
+        margin:10px;
+        width:400px;
+        display:block;
+    }
+    

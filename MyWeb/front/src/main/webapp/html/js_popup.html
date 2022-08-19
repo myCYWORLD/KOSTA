@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+window.addEventListener('load', function(){
+    document.querySelector('button').addEventListener('click',
+    function(){
+        var parentWindow = window.opener; //http프로토콜일 경우만 가능
+                           //file프로토콜일 경우는 cross origin 오류발생 
+        var parentBtClose = 
+            parentWindow.document.querySelector('button.close');
+        parentBtClose.style.display = 'none';
+        parentWindow.document.querySelector('button.open').style.display = 'inline';
+        window.close();
+    })
+});
+</script>
+</head>
+
+<body>
+<h1>팝업창</h1>
+<button>창닫기</button>
+</body>
+
+</html>

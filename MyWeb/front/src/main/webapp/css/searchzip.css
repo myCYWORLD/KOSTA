@@ -1,0 +1,14 @@
+table,td,tr{
+	margin-top: 5px;
+  	border: 0.5px solid #000000;
+ 	border-collapse: collapse;
+}
+
+input.addr{
+    width: 400px;
+}
+
+div table tr:hover{
+    cursor: pointer;
+    color:blueviolet;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form.html</title>
+</head>
+<body>
+
+<!-- <form action="https://www.naver.com/"> -->
+<form action="https://localhost:8888/back/request" autocomplete="off">
+  <fieldset>
+  	<legend>한줄입력</legend>
+  	<label for="txt1">전승현은:</label><input type="text" size="5" name="t1" value="바보야" required>
+  	<input id="txt1" type="text" size="5" name="t1" value="멍청이야" required>
+  </fieldset>
+  <fieldset>
+  	kosta지대귄카:<input maxlength="5" placeholder="퓨처한" name="t2" required>
+  </fieldset>
+  <fieldset>
+  	<legend>읽기 전용</legend>
+  	<input type="text" value="곤듀님정신차려이각박한세상속에" readonly>
+  </fieldset>		
+  <fieldset>
+  	jogernoo몽맥그만:<input type="password" name="p" placeholder="비밀번호" required>
+  </fieldset>	
+  
+  <fieldset>
+  	<input type="checkbox" checked name="c" value="1">ONE&nbsp;&nbsp;
+  	<input type="checkbox"         name="c" value="2">TWO&nbsp;&nbsp;
+  	<input type="checkbox"         name="c" value="3">THREE
+  </fieldset>
+  
+  <fieldset>
+  <input type="radio" name="r" vlaue="">ONE&nbsp;&nbsp;
+  <input type="radio" name="r" vlaue="2" checked>TWO&nbsp;&nbsp;
+  <input type="radio" name="r" vlaue=3">THREE
+  </fieldset>
+  
+  <input type="hidden" name="h" value="hv">
+  <fieldset>
+  <input type="file" name="f">
+  </fieldset>
+  <fieldset>
+    <select name="s">
+      <option>ONE</option>
+      <option selected="selected">TWO</option>
+      <option>THREE</option>
+     </select> 
+  </fieldset>
+  
+  <fieldset> 
+   	<textarea name="ta" rows="5" cols="50">multi line</textarea>
+  </fieldset>
+  
+  <fieldset> 	
+    <legend>HTML5에 추가된 input태그의 type속성값</legend>
+      <input type="number" min="1" max="10" value="5">
+	  <input type="email" value="a@b.com">
+	  <input type="range" min="1" max="10" value="3">
+	  <input type="date" value="2022-06-21">
+	  <input type="search" value="검색어">	  
+  </fieldset>
+  <fieldset> 
+  	<input type="submit" value="전송">  <!-- required, number/email유효성검사 -->
+  	<input type="button" value="일반버튼">
+  	<input type="submit" value="RESET버튼">
+  </fieldset>
+  <fieldset> 
+  	<button>전송1</button>
+  	<button type="button">일반버튼2</button> <!--form 태그 안에 있으면 type=submit -->
+  	<button type="reset">RESET버튼2</button> 
+  </fieldset>
+</form>
+<button>일반버튼3</button> <!--form 태그 밖에 있으면  type=button -->
+
+</body>
+</html>
