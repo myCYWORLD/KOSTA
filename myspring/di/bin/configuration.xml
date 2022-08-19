@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean name="p" class="com.my.dto.Product" />  
+	<!--바디가 없는 태그를 만들고 싶으면 starttag에 슬래시 사용 -->
+	<!--선언부에 공백이나 주석 있으면 안됨  -->
+</beans>

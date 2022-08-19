@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!--바디가 없는 태그를 만들고 싶으면 starttag에 슬래시 사용 -->
+	<!--선언부에 공백이나 주석 있으면 안됨 -->
+	<bean name="p" class="com.my.dto.Product">
+		<property name="prodNo" value="c0001" />
+		<property name="prodName" value="아메리카노" />
+		<property name="prodPrice" value="1000" />
+	</bean>
+
+	<bean name="customerRepository"
+		class="com.my.repository.CustomerOracleRepository" />
+	<!-- class="com.my.repository.customermysqlrepository" /> -->
+	<bean name="customerService"
+		class="com.my.service.CustomerService">
+		<!-- <constructor-arg ref="customerrepository"/> -->
+		<property name="repository" ref="customerRepository"></property>
+	</bean>
+
+	<bean name="productRepository"
+		class="com.my.repository.ProductOracleRepository">
+		<constructor-arg ref="dataSource" />
+	</bean>
+	<bean name="productService" class="com.my.service.ProductService">
+		<!-- <constructor-arg ref="productrepository" /> -->
+		<property name="repository" ref="productRepository"></property>
+	</bean>
+
+	<bean name="dataSource"
+		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass"
+			value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url"
+			value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="hr" />
+		<property name="password" value="hr" />
+	</bean>
+</beans>
